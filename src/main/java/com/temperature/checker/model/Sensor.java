@@ -12,9 +12,9 @@ public class Sensor {
     private String temperature;
     private String humidity;
     private String pressure;
-    private boolean rain;
+    private Boolean rain;
     private Integer light;
     private Integer charge;
-    private boolean charging;
+    private Boolean charging;
 
 }
