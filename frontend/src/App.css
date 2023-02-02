@@ -1,0 +1,15 @@
+.App-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.left-column,
+.middle-column,
+.right-column {
+    background-color: aquamarine;
+    margin: 1em;
+    width: 33%;
+    height: 500px;
+}
