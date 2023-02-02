@@ -1,8 +1,11 @@
 package com.temperature.checker.model;
 
 import lombok.Data;
+import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.time.Instant;
 
 @Document(value = "temprecords")
 @Data
@@ -16,5 +19,8 @@ public class Sensor {
     private Integer light;
     private Integer charge;
     private Boolean charging;
+
+    @CreatedDate
+    private Instant created;
 
 }
